@@ -42,22 +42,24 @@ Helpers::registerLiteModel(BeycanPress\CryptoPay\RCP\Models\TransactionsLite::cl
 
 load_plugin_textdomain('rcp-cryptopay', false, basename(__DIR__) . '/languages');
 
-if (!defined('RCP_PLUGIN_FILE')) {
-    add_action('admin_notices', function (): void {
-        ?>
-            <div class="notice notice-error">
-                <p><?php echo sprintf(esc_html__('Restrict Content Pro - CryptoPay Gateway: This plugin requires Restrict Content Pro to work. You can download Restrict Content Pro by %s.', 'rcp-cryptopay'), '<a href="https://wordpress.org/plugins/restrict-content/" target="_blank">' . esc_html__('clicking here', 'rcp-cryptopay') . '</a>'); ?></p>
-            </div>
-        <?php
-    });
-} elseif (Helpers::bothExists()) {
-    new BeycanPress\CryptoPay\RCP\Loader();
-} else {
-    add_action('admin_notices', function (): void {
-        ?>
-            <div class="notice notice-error">
-                <p><?php echo sprintf(esc_html__('Restrict Content Pro - CryptoPay Gateway: This plugin is an extra feature plugin so it cannot do anything on its own. It needs CryptoPay to work. You can buy CryptoPay by %s.', 'rcp-cryptopay'), '<a href="https://beycanpress.com/product/cryptopay-all-in-one-cryptocurrency-payments-for-wordpress/?utm_source=wp_org_addons&utm_medium=rcp" target="_blank">' . esc_html__('clicking here', 'rcp-cryptopay') . '</a>'); ?></p>
-            </div>
-        <?php
-    });
-}
+add_action('plugins_loaded', function (): void {
+    if (!defined('RCP_PLUGIN_FILE')) {
+        add_action('admin_notices', function (): void {
+            ?>
+                <div class="notice notice-error">
+                    <p><?php echo sprintf(esc_html__('Restrict Content Pro - CryptoPay Gateway: This plugin requires Restrict Content Pro to work. You can download Restrict Content Pro by %s.', 'rcp-cryptopay'), '<a href="https://wordpress.org/plugins/restrict-content/" target="_blank">' . esc_html__('clicking here', 'rcp-cryptopay') . '</a>'); ?></p>
+                </div>
+            <?php
+        });
+    } elseif (Helpers::bothExists()) {
+        new BeycanPress\CryptoPay\RCP\Loader();
+    } else {
+        add_action('admin_notices', function (): void {
+            ?>
+                <div class="notice notice-error">
+                    <p><?php echo sprintf(esc_html__('Restrict Content Pro - CryptoPay Gateway: This plugin is an extra feature plugin so it cannot do anything on its own. It needs CryptoPay to work. You can buy CryptoPay by %s.', 'rcp-cryptopay'), '<a href="https://beycanpress.com/product/cryptopay-all-in-one-cryptocurrency-payments-for-wordpress/?utm_source=wp_org_addons&utm_medium=rcp" target="_blank">' . esc_html__('clicking here', 'rcp-cryptopay') . '</a>'); ?></p>
+                </div>
+            <?php
+        });
+    }
+});
