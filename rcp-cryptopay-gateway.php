@@ -28,12 +28,12 @@ defined('ABSPATH') || exit;
 // Autoload
 require_once __DIR__ . '/vendor/autoload.php';
 
-define('CONSTANT_TAG_CRYPTOPAY_FILE', __FILE__);
-define('CONSTANT_TAG_CRYPTOPAY_VERSION', '1.0.0');
-define('CONSTANT_TAG_CRYPTOPAY_KEY', basename(__DIR__));
-define('CONSTANT_TAG_CRYPTOPAY_URL', plugin_dir_url(__FILE__));
-define('CONSTANT_TAG_CRYPTOPAY_DIR', plugin_dir_path(__FILE__));
-define('CONSTANT_TAG_CRYPTOPAY_SLUG', plugin_basename(__FILE__));
+define('RCP_CRYPTOPAY_FILE', __FILE__);
+define('RCP_CRYPTOPAY_VERSION', '1.0.0');
+define('RCP_CRYPTOPAY_KEY', basename(__DIR__));
+define('RCP_CRYPTOPAY_URL', plugin_dir_url(__FILE__));
+define('RCP_CRYPTOPAY_DIR', plugin_dir_path(__FILE__));
+define('RCP_CRYPTOPAY_SLUG', plugin_basename(__FILE__));
 
 use BeycanPress\CryptoPay\Integrator\Helpers;
 
