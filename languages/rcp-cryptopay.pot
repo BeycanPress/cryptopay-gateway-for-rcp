@@ -1,0 +1,81 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Restrict Content Pro - CryptoPay Gateway\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-16 06:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.3\n"
+"X-Domain: rcp-cryptopay"
+
+#. Description of the plugin
+msgid ""
+"Adds Cryptocurrency payment gateway (CryptoPay) for Restrict Content Pro."
+msgstr ""
+
+#. Author of the plugin
+msgid "BeycanPress LLC"
+msgstr ""
+
+#: rcp-cryptopay-gateway.php:50 rcp-cryptopay-gateway.php:60
+msgid "clicking here"
+msgstr ""
+
+#: app/Loader.php:121 app/Loader.php:122
+msgid "CryptoPay"
+msgstr ""
+
+#: app/Loader.php:129 app/Loader.php:130
+msgid "CryptoPay Lite"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://beycanpress.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://beycanpress.com/cryptopay/"
+msgstr ""
+
+#. Name of the plugin
+msgid "Restrict Content Pro - CryptoPay Gateway"
+msgstr ""
+
+#: rcp-cryptopay-gateway.php:60
+#, php-format
+msgid ""
+"Restrict Content Pro - CryptoPay Gateway: This plugin is an extra feature "
+"plugin so it cannot do anything on its own. It needs CryptoPay to work. You "
+"can buy CryptoPay by %s."
+msgstr ""
+
+#: rcp-cryptopay-gateway.php:50
+#, php-format
+msgid ""
+"Restrict Content Pro - CryptoPay Gateway: This plugin requires Restrict "
+"Content Pro to work. You can download Restrict Content Pro by %s."
+msgstr ""
+
+#: app/Loader.php:23
+msgid "Restrict Content Pro Transactions"
+msgstr ""
+
+#: app/Loader.php:104
+msgid "Transaction not found"
+msgstr ""
+
+#: app/Loader.php:109
+msgid "View transaction"
+msgstr ""
+
+#: app/Loader.php:98
+msgid "Waiting for payment"
+msgstr ""
