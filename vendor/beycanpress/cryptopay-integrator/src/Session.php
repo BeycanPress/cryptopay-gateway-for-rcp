@@ -59,7 +59,9 @@ class Session
     public static function remove(string $key): void
     {
         self::start();
-        unset($_SESSION['cp_integrator'][$key]);
+        if (self::has($key)) {
+            unset($_SESSION['cp_integrator'][$key]);
+        }
     }
 
     /**

@@ -144,6 +144,30 @@ class Helpers
     }
 
     /**
+     * @param string $currentPlugin
+     * @param string $pluginLink
+     * @param bool $download
+     * @return void
+     */
+    public static function requirePluginMessage(string $currentPlugin, string $pluginLink, bool $download = true): void
+    {
+        add_action('admin_notices', function () use ($currentPlugin, $pluginLink, $download): void {
+            require dirname(__DIR__) . '/views/message-1.php';
+        });
+    }
+
+    /**
+     * @param string $currentPlugin
+     * @return void
+     */
+    public static function requireCryptoPayMessage(string $currentPlugin): void
+    {
+        add_action('admin_notices', function () use ($currentPlugin): void {
+            require dirname(__DIR__) . '/views/message-2.php';
+        });
+    }
+
+    /**
      * @param array<mixed> $data
      * @return string
      * @throws \Exception
@@ -179,6 +203,17 @@ class Helpers
         Session::set($token, $data);
 
         return home_url("/?cp_spp={$token}");
+    }
+
+    /**
+     * @param string $url
+     * @return string|null
+     */
+    public static function getSPPToken(string $url): ?string
+    {
+        /** @var array<mixed> $matches */
+        preg_match('/[?&]cp_spp=([^&]+)/', $url, $matches);
+        return isset($matches[1]) ? $matches[1] : null;
     }
 
     /**

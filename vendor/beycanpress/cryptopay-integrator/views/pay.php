@@ -49,7 +49,26 @@
                 border-radius: 5px;
             }
 
+            .go-to-back {
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            .go-to-back a {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
             @media screen and (max-width: 768px) {
+                body {
+                    padding: 0 20px;
+                    text-align: center;
+                }
+
                 .container {
                     flex-direction: column;
                 }
@@ -59,6 +78,7 @@
                     margin-right: 0;
                     margin-bottom: 20px;
                     max-width: 100%;
+                    width: 100%;
                 }
             }
         </style>
@@ -83,6 +103,9 @@
             <div class="payment-form">
                 <?php echo $cryptopay; ?>
             </div>
+        </div>
+        <div class="go-to-back">
+            <a href="<?php echo esc_url($_SERVER["HTTP_REFERER"]) ?>"><?php echo esc_html__('Go back to add-on page') ?></a>
         </div>
         <?php do_action('wp_print_footer_scripts'); ?>
     </body>
