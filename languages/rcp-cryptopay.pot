@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Restrict Content Pro - CryptoPay Gateway\n"
+"Project-Id-Version: CryptoPay Gateway for Restrict Content Pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-16 06:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "BeycanPress LLC"
 msgstr ""
 
-#: rcp-cryptopay-gateway.php:50 rcp-cryptopay-gateway.php:60
+#: cryptopay-gateway-for-rcp.php:50 cryptopay-gateway-for-rcp.php:60
 msgid "clicking here"
 msgstr ""
 
@@ -46,21 +46,21 @@ msgid "https://beycanpress.com/cryptopay/"
 msgstr ""
 
 #. Name of the plugin
-msgid "Restrict Content Pro - CryptoPay Gateway"
+msgid "CryptoPay Gateway for Restrict Content Pro"
 msgstr ""
 
-#: rcp-cryptopay-gateway.php:60
+#: cryptopay-gateway-for-rcp.php:60
 #, php-format
 msgid ""
-"Restrict Content Pro - CryptoPay Gateway: This plugin is an extra feature "
+"CryptoPay Gateway for Restrict Content Pro: This plugin is an extra feature "
 "plugin so it cannot do anything on its own. It needs CryptoPay to work. You "
 "can buy CryptoPay by %s."
 msgstr ""
 
-#: rcp-cryptopay-gateway.php:50
+#: cryptopay-gateway-for-rcp.php:50
 #, php-format
 msgid ""
-"Restrict Content Pro - CryptoPay Gateway: This plugin requires Restrict "
+"CryptoPay Gateway for Restrict Content Pro: This plugin requires Restrict "
 "Content Pro to work. You can download Restrict Content Pro by %s."
 msgstr ""
 
