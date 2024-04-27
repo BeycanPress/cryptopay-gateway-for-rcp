@@ -27,6 +27,7 @@ class Loader
                 'orderId' => function ($tx) {
                     return Helpers::run('view', 'components/link', [
                         'url' => sprintf(admin_url('admin.php?page=rcp-payments&payment_id=%d&view=edit-payment'), $tx->orderId), // @phpcs:ignore
+                        /* translators: %d: transaction order id */
                         'text' => sprintf(esc_html__('View payment #%d', 'gf-cryptopay'), $tx->orderId)
                     ]);
                 }
