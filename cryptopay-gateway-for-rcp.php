@@ -19,9 +19,9 @@ defined('ABSPATH') || exit;
  * License:     GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: rcp-cryptopay
- * Tags: Cryptopay, Cryptocurrency, WooCommerce, WordPress, MetaMask, Trust, Binance, Wallet, Ethereum, Bitcoin, Binance smart chain, Payment, Plugin, Gateway, Moralis, Converter, API, coin market cap, CMC
+ * Tags: Bitcoin, Ethereum, Crypto, Payment, Restrict Content Pro
  * Requires at least: 5.0
- * Tested up to: 6.5.0
+ * Tested up to: 6.6
  * Requires PHP: 8.1
 */
 
@@ -37,12 +37,22 @@ define('RCP_CRYPTOPAY_SLUG', plugin_basename(__FILE__));
 
 use BeycanPress\CryptoPay\Integrator\Helpers;
 
-Helpers::registerModel(BeycanPress\CryptoPay\RCP\Models\TransactionsPro::class);
-Helpers::registerLiteModel(BeycanPress\CryptoPay\RCP\Models\TransactionsLite::class);
+/**
+ * @return void
+ */
+function rcpCryptoPayRegisterModels(): void
+{
+    Helpers::registerModel(BeycanPress\CryptoPay\RCP\Models\TransactionsPro::class);
+    Helpers::registerLiteModel(BeycanPress\CryptoPay\RCP\Models\TransactionsLite::class);
+}
+
+rcpCryptoPayRegisterModels();
 
 load_plugin_textdomain('rcp-cryptopay', false, basename(__DIR__) . '/languages');
 
 add_action('plugins_loaded', function (): void {
+    rcpCryptoPayRegisterModels();
+
     if (!defined('RCP_PLUGIN_FILE')) {
         Helpers::requirePluginMessage('Restrict Content Pro', 'https://wordpress.org/plugins/restrict-content/');
     } elseif (Helpers::bothExists()) {

@@ -48,10 +48,11 @@ class Loader
      */
     public function paymentFinished(object $data): void
     {
+        global $rcp_payments_db;
+
         $tx = $data->getModel()->findOneBy([
             'hash' => $data->getHash()
         ]);
-        global $rcp_payments_db;
 
         update_post_meta($tx->getId(), 'rcp_transaction_id', $data->getHash());
 

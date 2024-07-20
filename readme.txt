@@ -2,7 +2,7 @@
 Contributors: BeycanPress
 Tags: Bitcoin, Ethereum, Crypto, Payment, Restrict Content Pro
 Requires at least: 5.0
-Tested up to: 6.5.0
+Tested up to: 6.6
 Requires PHP: 8.1
 Stable Tag: 1.0.0
 Version: 1.0.0
