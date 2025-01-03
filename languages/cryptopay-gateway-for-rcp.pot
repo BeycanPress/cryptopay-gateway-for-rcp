@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptoPay Gateway for Restrict Content Pro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-16 06:33+0000\n"
+"POT-Creation-Date: 2025-01-03 10:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -13,8 +13,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.6; wp-6.4.3\n"
-"X-Domain: rcp-cryptopay"
+"X-Loco-Version: 2.6.14; wp-6.7.1\n"
+"X-Domain: cryptopay-gateway-for-rcp"
 
 #. Description of the plugin
 msgid ""
@@ -25,15 +25,15 @@ msgstr ""
 msgid "BeycanPress LLC"
 msgstr ""
 
-#: cryptopay-gateway-for-rcp.php:50 cryptopay-gateway-for-rcp.php:60
-msgid "clicking here"
-msgstr ""
-
-#: app/Loader.php:121 app/Loader.php:122
+#: app/Loader.php:123 app/Loader.php:124
 msgid "CryptoPay"
 msgstr ""
 
-#: app/Loader.php:129 app/Loader.php:130
+#. Name of the plugin
+msgid "CryptoPay Gateway for Restrict Content Pro"
+msgstr ""
+
+#: app/Loader.php:131 app/Loader.php:132
 msgid "CryptoPay Lite"
 msgstr ""
 
@@ -45,37 +45,23 @@ msgstr ""
 msgid "https://beycanpress.com/cryptopay/"
 msgstr ""
 
-#. Name of the plugin
-msgid "CryptoPay Gateway for Restrict Content Pro"
-msgstr ""
-
-#: cryptopay-gateway-for-rcp.php:60
-#, php-format
-msgid ""
-"CryptoPay Gateway for Restrict Content Pro: This plugin is an extra feature "
-"plugin so it cannot do anything on its own. It needs CryptoPay to work. You "
-"can buy CryptoPay by %s."
-msgstr ""
-
-#: cryptopay-gateway-for-rcp.php:50
-#, php-format
-msgid ""
-"CryptoPay Gateway for Restrict Content Pro: This plugin requires Restrict "
-"Content Pro to work. You can download Restrict Content Pro by %s."
-msgstr ""
-
 #: app/Loader.php:23
 msgid "Restrict Content Pro Transactions"
 msgstr ""
 
-#: app/Loader.php:104
+#: app/Loader.php:106
 msgid "Transaction not found"
 msgstr ""
 
-#: app/Loader.php:109
+#. %d: transaction order id
+#: app/Loader.php:31
+msgid "View payment #%d"
+msgstr ""
+
+#: app/Loader.php:111
 msgid "View transaction"
 msgstr ""
 
-#: app/Loader.php:98
+#: app/Loader.php:100
 msgid "Waiting for payment"
 msgstr ""
