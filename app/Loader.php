@@ -20,7 +20,7 @@ class Loader
 
         // add transaction page
         Helpers::createTransactionPage(
-            esc_html__('Restrict Content Pro Transactions', 'rcp-cryptopay'),
+            esc_html__('Restrict Content Pro Transactions', 'cryptopay-gateway-for-rcp'),
             'rcp',
             10,
             [
@@ -28,7 +28,7 @@ class Loader
                     return Helpers::run('view', 'components/link', [
                         'url' => sprintf(admin_url('admin.php?page=rcp-payments&payment_id=%d&view=edit-payment'), $tx->orderId), // @phpcs:ignore
                         /* translators: %d: transaction order id */
-                        'text' => sprintf(esc_html__('View payment #%d', 'gf-cryptopay'), $tx->orderId)
+                        'text' => sprintf(esc_html__('View payment #%d', 'cryptopay-gateway-for-rcp'), $tx->orderId)
                     ]);
                 }
             ]
@@ -97,18 +97,18 @@ class Loader
         }
 
         if (empty($transactionId)) {
-            return esc_html__('Waiting for payment', 'rcp-cryptopay');
+            return esc_html__('Waiting for payment', 'cryptopay-gateway-for-rcp');
         }
 
         $txHash = get_post_meta($transactionId, 'rcp_transaction_id', true);
 
         if (empty($txHash)) {
-            return esc_html__('Transaction not found', 'rcp-cryptopay');
+            return esc_html__('Transaction not found', 'cryptopay-gateway-for-rcp');
         }
 
         return Helpers::run('view', 'components/link', [
             'url' => sprintf(admin_url('admin.php?page=%s_rcp_transactions&s=%s'), $payment->gateway, $txHash),
-            'text' => esc_html__('View transaction', 'rcp-cryptopay')
+            'text' => esc_html__('View transaction', 'cryptopay-gateway-for-rcp')
         ]);
     }
 
@@ -120,16 +120,16 @@ class Loader
     {
         if (Helpers::exists()) {
             $gateways[GatewayPro::ID] = [
-                'label'        => __('CryptoPay', 'rcp-cryptopay'),
-                'admin_label'  => __('CryptoPay', 'rcp-cryptopay'),
+                'label'        => __('CryptoPay', 'cryptopay-gateway-for-rcp'),
+                'admin_label'  => __('CryptoPay', 'cryptopay-gateway-for-rcp'),
                 'class'        => GatewayPro::class
             ];
         }
 
         if (Helpers::liteExists()) {
             $gateways[GatewayLite::ID] = [
-                'label'        => __('CryptoPay Lite', 'rcp-cryptopay'),
-                'admin_label'  => __('CryptoPay Lite', 'rcp-cryptopay'),
+                'label'        => __('CryptoPay Lite', 'cryptopay-gateway-for-rcp'),
+                'admin_label'  => __('CryptoPay Lite', 'cryptopay-gateway-for-rcp'),
                 'class'        => GatewayLite::class
             ];
         }

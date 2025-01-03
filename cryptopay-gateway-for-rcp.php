@@ -18,7 +18,7 @@ defined('ABSPATH') || exit;
  * Author URI:  https://beycanpress.com
  * License:     GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain: rcp-cryptopay
+ * Text Domain: cryptopay-gateway-for-rcp
  * Tags: Bitcoin, Ethereum, Crypto, Payment, Restrict Content Pro
  * Requires at least: 5.0
  * Tested up to: 6.7.1
@@ -49,7 +49,7 @@ function rcpCryptoPayRegisterModels(): void
 rcpCryptoPayRegisterModels();
 
 add_action('init', function (): void {
-    load_plugin_textdomain('rcp-cryptopay', false, basename(__DIR__) . '/languages');
+    load_plugin_textdomain('cryptopay-gateway-for-rcp', false, basename(__DIR__) . '/languages');
 });
 
 add_action('plugins_loaded', function (): void {
