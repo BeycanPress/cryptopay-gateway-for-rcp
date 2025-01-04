@@ -48,10 +48,6 @@ function rcpCryptoPayRegisterModels(): void
 
 rcpCryptoPayRegisterModels();
 
-add_action('init', function (): void {
-    load_plugin_textdomain('cryptopay-gateway-for-rcp', false, basename(__DIR__) . '/languages');
-});
-
 add_action('plugins_loaded', function (): void {
     rcpCryptoPayRegisterModels();
 
