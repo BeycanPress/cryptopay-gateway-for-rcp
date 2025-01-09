@@ -1,20 +1,17 @@
 ## Cryptocurrency Payment Gateway for Restrict Content Pro by CryptoPay
 
-First of all, we would like to point out that this plugin is not a standalone plugin. This plugin is a **<a href="https://beycanpress.com/cryptopay/?utm_source=github&utm_medium=cryptopay_rcp">cryptocurrency payment gateway for Restrict Content Pro</a>**. In other words, users who want to sell courses with cryptocurrency payments can use WordPress and Restrict Content Pro. However, this plugin is a plugin for CryptoPay and a cryptocurrency payment gateway for Restrict Content Pro. So it's actually CryptoPay, which is the main plugin that handles cryptocurrency payments for WordPress. Therefore, users must have both plugins.
+### What does this plugin do?
 
-Thanks to this plugin, you can receive **<a href="https://beycanpress.com/cryptopay/?utm_source=github&utm_medium=cryptopay_rcp">cryptocurrency payments</a>** from many Blockchain networks, especially Bitcoin, Ethereum, Solana, and sell paid courses with cryptocurrencies on your WordPress site with the Restrict Content Pro plugin.
+Blockchain and crypto ecosystem is growing day by day. Many people doing business in this sector also establish communities, sell education, and build platforms. If you have established a platform with Restrict Content Pro on WordPress and are looking for a solution to receive crypto payments for Restrict Content Pro, you are in the right place.
 
-What is CryptoPay? (Click and watch video)
+Because with CryptoPay, you can get the crypto payment gateway for Restrict Content Pro, completely commission-free and peer to peer.
 
-[![Cryptocurrency payment gateway for WordPress](https://img.youtube.com/vi/3vaoFL4XG10/0.jpg)](https://www.youtube.com/watch?v=3vaoFL4XG10)
-<br>
+### How does it work?
 
-Review CryptoPay Lite: **<a href="https://wordpress.org/plugins/cryptopay-wc-lite/">Cryptocurrency payment gateway for Restrict Content Pro</a>**
+First of all, you must have one of the Lite or Premium versions of CryptoPay. Because this is an integration plugin. Of course, Restrict Content Pro must also be installed. After activating CryptoPay, you need to go to the payment settings in your Restrict Content Pro dashboard and add CryptoPay as a payment option.
 
-Review CryptoPay Premium: **<a href="https://beycanpress.com/cryptopay/?utm_source=github&utm_medium=cryptopay_rcp">Cryptocurrency payments for WooCommerce</a>**
+As you can see in the pictures, you can then start receiving crypto payments directly with Restrict Content Pro.
 
-Review Restrict Content Pro: **<a href="https://wordpress.org/plugins/restrict-content/">Restrict Content Pro</a>**
-
-See **<a href="https://cryptopay.beycanpress.net/" target="_blank">Demo</a>**
-
-Bitcoin, Ethereum, Binance, Solana, Tron, Avalanche, Polygon, MetaMask, TrustWallet, WalletConnect, Phantom Cryptocurrency payments gateway plugin for WordPress & WooCommerce, cryptocurrency wordpress, cryptocurrency woocommerce, cryptocurrency payments, cryptocurrency payments gateway, cryptocurrency payments for woocommerce, cryptocurrency payments for wordpress, bitcoin payment for wordpress, woocommerce crypto payments, wordpress crypto payments, wordPress cryptocurrency payment plugin, woocommerce cryptocurrency payment gateway, cryptocurrency payment gateway for woocommerce, crypto payments woocommerce, accept cryptocurrency payments
+![Screenshot 1](https://i.hizliresim.com/ieidb1q.png)
+![Screenshot 2](https://i.hizliresim.com/n5i1v7f.png)
+![Screenshot 3](https://i.hizliresim.com/rj2cn8b.png)
