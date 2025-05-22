@@ -18,21 +18,23 @@ class Loader
     {
         Helpers::registerIntegration('rcp');
 
-        // add transaction page
-        Helpers::createTransactionPage(
-            esc_html__('Restrict Content Pro Transactions', 'cryptopay-gateway-for-rcp'),
-            'rcp',
-            10,
-            [
-                'orderId' => function ($tx) {
-                    return Helpers::run('view', 'components/link', [
-                        'url' => sprintf(admin_url('admin.php?page=rcp-payments&payment_id=%d&view=edit-payment'), $tx->orderId), // @phpcs:ignore
-                        /* translators: %d: transaction order id */
-                        'text' => sprintf(esc_html__('View payment #%d', 'cryptopay-gateway-for-rcp'), $tx->orderId)
-                    ]);
-                }
-            ]
-        );
+        add_action('init', function (): void {
+            // add transaction page
+            Helpers::createTransactionPage(
+                esc_html__('Restrict Content Pro Transactions', 'cryptopay-gateway-for-rcp'),
+                'rcp',
+                9,
+                [
+                    'orderId' => function ($tx) {
+                        return Helpers::run('view', 'components/link', [
+                            'url' => sprintf(admin_url('admin.php?page=rcp-payments&payment_id=%d&view=edit-payment'), $tx->orderId), // @phpcs:ignore
+                            /* translators: %d: transaction order id */
+                            'text' => sprintf(esc_html__('View payment #%d', 'cryptopay-gateway-for-rcp'), $tx->orderId)
+                        ]);
+                    }
+                ]
+            );
+        });
 
         Hook::addAction('payment_finished_rcp', [$this, 'paymentFinished']);
         Hook::addFilter('payment_redirect_urls_rcp', [$this, 'paymentRedirectUrls']);
